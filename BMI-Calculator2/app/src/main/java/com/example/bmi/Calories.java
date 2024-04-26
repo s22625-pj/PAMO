@@ -66,4 +66,10 @@ public class Calories extends AppCompatActivity {
 
         this.dailyCaloriesText.setText("Daily calories: " + dailyCalories);
     }
+    public double calculateDailyCalories(float weight, float height, int age, String gender) {
+        return gender.equals("FEMALE") ?
+                655.1 + (9.563 * weight) + (1.85 * height) - (4.676 * age) :
+                66.5 + (13.75 * weight) + (5.003 * height) - (6.775 * age);
+    }
+
 }
