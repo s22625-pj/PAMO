@@ -21,12 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- Other activities -->
         <activity android:name=".MainActivity" />
         <activity android:name=".Recipes" />
         <activity android:name=".BMI" />
         <activity android:name=".Calories" />
+        <activity android:name=".ShoppingListActivity" />
+        <activity android:name=".BmiChartActivity" />
 
     </application>
 </manifest>

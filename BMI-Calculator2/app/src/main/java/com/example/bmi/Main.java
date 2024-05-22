@@ -11,9 +11,12 @@ public class Main extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main1);
+
         Button dailyButton = findViewById(R.id.calories);
         Button bmiButton = findViewById(R.id.bmi_calculator);
         Button recipesButton = findViewById(R.id.recipes);
+        Button shoppingListButton = findViewById(R.id.shopping_list);
+        Button bmiChartButton = findViewById(R.id.bmi_chart);
 
         dailyButton.setOnClickListener(v -> {
             startActivity(new Intent(Main.this, Calories.class));
@@ -23,6 +26,12 @@ public class Main extends AppCompatActivity {
         });
         recipesButton.setOnClickListener(v -> {
             startActivity(new Intent(Main.this, Recipes.class));
+        });
+        shoppingListButton.setOnClickListener(v -> {
+            startActivity(new Intent(Main.this, ShoppingListActivity.class));
+        });
+        bmiChartButton.setOnClickListener(v -> {
+            startActivity(new Intent(Main.this, BmiChartActivity.class));
         });
     }
 }
